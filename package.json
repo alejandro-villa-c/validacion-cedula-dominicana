@@ -1,0 +1,24 @@
+{
+  "name": "validacion-cedula-dominicana",
+  "version": "1.0.0",
+  "description": "Algoritmo validador de cédula dominicana",
+  "main": "validacion-cedula-dominicana.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandro-villa-c/validacion-cedula-dominicana.git"
+  },
+  "keywords": [
+    "validacion",
+    "cedula",
+    "dominicana"
+  ],
+  "author": "Alejandro Villa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejandro-villa-c/validacion-cedula-dominicana/issues"
+  },
+  "homepage": "https://github.com/alejandro-villa-c/validacion-cedula-dominicana#readme"
+}
