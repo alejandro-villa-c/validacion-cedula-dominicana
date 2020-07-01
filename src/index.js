@@ -3,7 +3,7 @@ function validateDominicanId(dominicanId) {
         return false;
     }
 
-    dominicanId = dominicanId.replaceAll('-', '');
+    dominicanId = dominicanId.replace(/-/g, '');
     dominicanId = dominicanId.trim();
 
     const lengthIsValid = dominicanId.length === 11;

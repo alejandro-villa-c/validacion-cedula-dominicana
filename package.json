@@ -1,6 +1,6 @@
 {
   "name": "validacion-cedula-dominicana",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Algoritmo validador de cédula dominicana",
   "main": "./dist/index.min.js",
   "types": "./src/types/index.d.ts",
