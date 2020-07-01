@@ -1,21 +1,28 @@
-function validateDominicanId(cedula) {
-    const lengthIsValid = cedula.length === 11;
-    if (!cedula || !lengthIsValid) {
+function validateDominicanId(dominicanId) {
+    if (!dominicanId) {
         return false;
     }
 
-    const firstThreeDigits = cedula.substr(0, 3);
-    if (firstThreeDigits === "000") {
+    dominicanId = dominicanId.replaceAll('-', '');
+    dominicanId = dominicanId.trim();
+
+    const lengthIsValid = dominicanId.length === 11;
+    if (!lengthIsValid) {
+        return false;
+    }
+
+    const firstThreeDigits = dominicanId.substr(0, 3);
+    if (firstThreeDigits === '000') {
         return false;
     }
 
     let sum = 0;
-    const verifierDigit = parseInt(cedula.substr(10, 1));
-    const multipliers = "1212121212";
+    const verifierDigit = parseInt(dominicanId.substr(10, 1));
+    const multipliers = '1212121212';
 
     for (let i = 0; i < 10; i++)
     {
-        const digit = parseInt(cedula.substr(i, 1));
+        const digit = parseInt(dominicanId.substr(i, 1));
         const multiplier = parseInt(multipliers.substr(i, 1));
         const multipliedDigit = digit * multiplier;
         let result = multipliedDigit;

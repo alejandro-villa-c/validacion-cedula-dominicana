@@ -1,8 +1,9 @@
 {
   "name": "validacion-cedula-dominicana",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Algoritmo validador de cédula dominicana",
-  "main": "validacion-cedula-dominicana.js",
+  "main": "./dist/index.min.js",
+  "types": "./src/types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
