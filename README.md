@@ -6,7 +6,7 @@ Algoritmo validador de cédula dominicana / Dominican ID validator algorithm
 
 CDN
 
-```javascript
+```html
 <script src="https://unpkg.com/validacion-cedula-dominicana/src/index.min.js"></script>
 ```
 
