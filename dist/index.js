@@ -41,3 +41,5 @@ function validateDominicanId(dominicanId) {
     const remainder = ((10 - (sum % 10)) % 10);
     return remainder === verifierDigit;
 }
+
+export default validateDominicanId;

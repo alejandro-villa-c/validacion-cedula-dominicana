@@ -1,6 +1,6 @@
 {
   "name": "validacion-cedula-dominicana",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Algoritmo validador de cédula dominicana",
   "main": "./dist/index.min.js",
   "types": "./src/types/index.d.ts",
@@ -14,7 +14,12 @@
   "keywords": [
     "validacion",
     "cedula",
-    "dominicana"
+    "dominicana",
+    "validate",
+    "dominican",
+    "id",
+    "digito",
+    "verificador"
   ],
   "author": "Alejandro Villa",
   "license": "ISC",

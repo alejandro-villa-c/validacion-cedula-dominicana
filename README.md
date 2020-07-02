@@ -1,16 +1,22 @@
 # validacion-cedula-dominicana
 
-Algoritmo validador de cédula dominicana. / Dominican ID validating algorithm.
+Algoritmo validador de cédula dominicana / Dominican ID validator algorithm
 
 ## Instalación / Installation
 
-NPM.
+CDN
+
+```javascript
+<script src="https://unpkg.com/validacion-cedula-dominicana/src/index.min.js"></script>
+```
+
+NPM
 
 ```bash
 npm install validacion-cedula-dominicana
 ```
 
-Yarn.
+Yarn
 
 ```bash
 yarn add validacion-cedula-dominicana
