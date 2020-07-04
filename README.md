@@ -27,6 +27,10 @@ yarn add validacion-cedula-dominicana
 ```javascript
 import validateDominicanId from 'validacion-cedula-dominicana';
 
-validateDominicanId('000-0000000-0');
+/**
+ * @param {string} dominicanId 
+ * - Cédula dominicana que contenga solo dígitos. No admite guiones ni letras.
+ * - Dominican ID that contains only digits. Does not allow hyphens nor letters.
+ */
 validateDominicanId('00000000000');
 ```
