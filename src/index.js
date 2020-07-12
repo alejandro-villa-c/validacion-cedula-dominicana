@@ -59,27 +59,24 @@ function validateDominicanId(dominicanId) {
         return false;
     }
 
-    let sum = 0;
     const verifierDigit = parseInt(dominicanId.substr(10, 1));
     const multipliers = '1212121212';
+    const sum = dominicanId
+        .substr(0, 10)
+        .split('')
+        .map((digit, index) => {
+            const multiplier = multipliers.charAt(index);
+            const multipliedDigit = parseInt(digit) * multiplier;
 
-    for (let i = 0; i < dominicanId.length - 1; i++)
-    {
-        const digit = parseInt(dominicanId.substr(i, 1));
-        const multiplier = parseInt(multipliers.substr(i, 1));
-        const multipliedDigit = digit * multiplier;
-        let result = multipliedDigit;
+            if (multipliedDigit < 10) {
+                return multipliedDigit;
+            }
 
-        if (result > 9)
-        {
-            const resultString = result.toString();
-            const firstDigit = parseInt(resultString.charAt(0));
-            const secondDigit = parseInt(resultString.charAt(1));
-            result = firstDigit + secondDigit;
-        }
-
-        sum += result;
-    }
+            const firstDigit = parseInt(multipliedDigit / 10);
+            const secondDigit = multipliedDigit % 10;
+            return firstDigit + secondDigit;
+        })
+        .reduce((a, b) => a + b);
 
     const remainder = ((10 - (sum % 10)) % 10);
     return remainder === verifierDigit;
